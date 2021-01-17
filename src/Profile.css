@@ -1,0 +1,25 @@
+.profile {
+  left: 40px;
+  height: 100%;
+  width: 30%;
+  padding-top: 20px;
+}
+
+.profile div {
+  padding-top: 5px;
+}
+.profile a {
+  color: blue;
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.info {
+  display: flex;
+  padding-bottom: 5px;
+}
+.info div {
+  padding-right: 5px;
+}
