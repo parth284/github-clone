@@ -9,7 +9,7 @@ const Data = async (login)=>{
     const repos = await axios.get(`https://api.github.com/users/${login}/repos`);
     // const userData = [{Profile:Profile, followersList:followersList, followingsList:followingsList, starred:starred, repos:repos}]
     const userData = [{profile, followersList, followingsList, starred, repos}]
-    console.log(userData)
+    // console.log(userData)
     return userData;
 
     

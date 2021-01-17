@@ -1,6 +1,39 @@
 .overview {
-  height: 100%;
-  width: 60%;
   right: 10px;
+  height: 85%;
   padding-top: 20px;
+  overflow-y: scroll;
+  display: flex;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.overview::-webkit-scrollbar {
+  display: none;
+}
+
+.repositories {
+  border: 1px solid black;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border-radius: 6px;
+  width: 400px;
+  height: auto;
+  padding-left: 10px;
+}
+
+.details {
+  display: flex;
+  padding-top: 10px;
+}
+.details div {
+  margin-right: 10px !important;
+  margin-left: 0 !important;
+}
+.description {
+  padding-top: 5px;
+}
+
+.repositoriesBlock {
+  display: flex;
+  flex-wrap: wrap;
 }

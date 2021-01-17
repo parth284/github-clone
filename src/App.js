@@ -7,7 +7,7 @@ import userData from "./Data"
 
 const App = ()=>{
     const [data, setData] = useState()
-    const [input ,setInput] = useState("parth284")
+    const [input ,setInput] = useState("CleverProgrammer")
 
     const datafetch = async (e) =>{
         e.preventDefault()
@@ -26,7 +26,7 @@ const App = ()=>{
             return<div>{`This User not founf`}</div>
         }
         else{
-            console.log(data[0])
+            // console.log(data[0])
             return(
                 <div>
                     <div>
@@ -44,7 +44,6 @@ const App = ()=>{
                     <div>
                         <Overview followersList={data[0].followersList.data} 
                                 followingsList={data[0].followingsList.data} 
-                                starred={data[0].starred.data} 
                                 repos={data[0].repos.data}/>
                     </div>
                 </div>
@@ -55,7 +54,7 @@ const App = ()=>{
     
 
     return(
-        <div>
+        <div className="main">
             <div className="header">
                 <img className="githubLogo" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png"/>
                 <div className="input">
