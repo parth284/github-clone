@@ -9,6 +9,11 @@
 .inputId {
   padding-right: 50px;
   width: 200px;
+  height: 20px;
+  border: none;
+  color: rgb(197, 171, 221);
+  border-radius: 5px;
+  background-color: #4a3769;
 }
 .input {
   text-align: center;
@@ -27,4 +32,8 @@
 }
 * {
   box-sizing: border-box;
+}
+button {
+  margin-left: 10px;
+  background-color: #4a3769;
 }

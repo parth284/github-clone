@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import "./App.css"
 import Profile from "./Profile";
 import Overview from "./Overview";
@@ -9,21 +9,23 @@ const App = ()=>{
     const [data, setData] = useState()
     const [input ,setInput] = useState("parth284")
 
+
     const datafetch = async (e) =>{
-        e.preventDefault()
         // setInput("")
         await userData(input).then((data)=>{setData(data)}).catch((error) =>{setData("error")})
     }
-    // console.log(data.length)
+
+    useEffect(()=>{datafetch()},[])
+
 
     const render = ()=>{
         // console.log(data)
         if(data===undefined){
-            return<div>Lodding</div>
+            return<div style={{marginTop:"10%" ,marginLeft:"45%"}}><h3>{`Lodding`}</h3></div>
 
         }
         else if(data === "error"){
-            return<div>{`This User not founf`}</div>
+            return<div style={{marginTop:"10%" ,marginLeft:"45%"}}><h3>{`This User not founf`}</h3></div>
         }
         else{
             // console.log(data[0])

@@ -1,6 +1,7 @@
 .profile {
   left: 40px;
-  width: 30%;
+  min-width: 35%;
+  min-height: 100%;
   padding-top: 80px;
   padding-left: 130px;
   align-items: center;
@@ -14,7 +15,8 @@
 .profile a {
   color: blue;
 }
-img {
+.profileimg {
+  border: 10px solid #000000;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -26,4 +28,8 @@ img {
 }
 .info div {
   padding-right: 5px;
+}
+body {
+  background-color: rgb(42, 33, 129);
+  color: rgb(182, 176, 197);
 }

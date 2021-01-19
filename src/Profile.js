@@ -6,7 +6,7 @@ const Profile = ({image, name, login, bio, followers, following, blog, starred})
     // console.log(starred.length)
     return (
         <div className="profile">
-            <img className="img" src={`${image}`}/>
+            <img className="profileimg" src={`${image}`}/>
             <div><h1>{name}</h1></div>
             <div><h3>{login}</h3></div>
             <div><h5>{bio}</h5></div>
@@ -18,7 +18,7 @@ const Profile = ({image, name, login, bio, followers, following, blog, starred})
                 </div>
                 <div>{starred.length}</div>
             </div>
-            <a href={`http://${blog}/`}>{blog}</a>
+            <a href={`http://${blog}/`} target="_blank" >{blog}</a>
         </div>
     );
 };
