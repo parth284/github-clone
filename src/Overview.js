@@ -5,8 +5,9 @@ const Overview = ({followersList, followingsList, repos}) => {
     console.log(repos.length)
 
     const repositories = ()=>{
-        return repos.map((repos)=>{
             // console.log(repos.name)
+
+        return repos.map((repos)=>{
             return (
                 <div className="repositories">
                     <a href={repos.svn_url} key={repos.id}><h3>{repos.name}</h3></a>
@@ -24,20 +25,31 @@ const Overview = ({followersList, followingsList, repos}) => {
         })
     }
 
-    const followers = ()=>{
+    // const followers = ()=>{
+    //     console.log(followingsList)
+    //     return followingsList.map((followingsList)=>{
+    //         return(
+    //             <div>
+    //                 <a>{followingsList.login}</a>
+    //             </div>
+    //         );
 
-    }
+    //     })
 
-    const followings = ()=>{
+    // }
 
-    }
+    // const followings = ()=>{
+
+    // }
 
 
     return (
         <div className="overview">
+            <h2>repositories</h2>
             <div className="repositoriesBlock">{repositories()}</div>
+            {/* <h2>followers List</h2>
             <div>{followers()}</div>
-            <div>{followings()}</div>
+            <div>{followings()}</div> */}
         </div>
     );
 }

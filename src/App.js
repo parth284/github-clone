@@ -7,7 +7,7 @@ import userData from "./Data"
 
 const App = ()=>{
     const [data, setData] = useState()
-    const [input ,setInput] = useState("CleverProgrammer")
+    const [input ,setInput] = useState("parth284")
 
     const datafetch = async (e) =>{
         e.preventDefault()
